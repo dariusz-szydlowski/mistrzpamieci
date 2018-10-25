@@ -1,0 +1,579 @@
+
+/* ============= LAYOUT SECTION ============= */
+
+
+
+
+
+body {
+background-color: #d29efa;  /*   #9a9ade orig  #9c9f84  */
+/*background: url('Background_3_1.jpg');  zle wyglada */
+margin: 0px;
+font-family: Verdana, Georgia, serif;     /* Samuraj Roboto, arial, sans-serif;*/
+font-size: 14px;   /* oryginalnie bylo 14px */
+            /*box-sizing: border-box;   /* od Samuraj */
+}	
+ 
+#header {
+background-color: #7d4dd5;              /*#7d4dd5; orig  #5c755e  */
+margin: 10px;
+height: 90px;    /*tak bylo pierwotnie*/ 
+   
+border-radius: 7px;
+border: 2px solid #efe5d0;    /* I added */
+}
+ 
+/* nav początek from Samuraj */
+
+
+#nav {
+margin: 10px;  /* b. wazne rozeszło się wszystko */
+       /* height: 83px;    moje wizualne ustawienia */
+  /* height: 40px;         why in nav ul li wg kolegi Sam*/
+border-radius: 7px;
+ /* wg Kolegi tutaj - u mnie wyzej */
+border: 2px solid #efe5d0;
+background-color: #7d4dd5;   
+}
+
+
+#nav ul {
+list-style: none;
+overflow: auto; 
+padding: 10px;
+  
+        
+}
+
+#nav ul li {
+float: left;
+padding: 10px;
+margin: 5px;
+  
+
+                  /* margin-right: 20px; do spr usunelam */
+   
+
+   /*height: 40px;  /* dot. kolor box   */
+   /*weight: 80px;
+   margin: 10px;   /* odstępy między linkami */ 
+}
+
+#nav ul li a {  /* kolor czcionki w a */
+color: #fff;
+text-decoration: none;
+font-size: 18px;  /*zmienia się razedm z kolorowym box */
+text-align: center;
+display: table;
+width: 100%;   /* 100% swojego rodzica  tj. 100% znacznika li*/
+height: 100%;   /* 100% swojego rodzica */
+ 
+
+
+}
+
+#nav ul li a span {
+display: table-cell;
+vertical-align: middle; /* dziala tylko dla komorek tabeli */
+      
+   
+
+}
+
+.home {
+ background-color: #726b6b;                  /*background: 
+   rgba(255, 255, 48, 0.5);*/
+ }
+
+.about {
+background-color:#5c8ee8;
+ 
+/*background: rgba(242, 102, 41, 0.5); */
+}
+
+.projects {
+background-color: #7dcb66;
+/*background: rgba(39, 200, 45, 0.5); */
+}
+
+.interests {
+background-color: #d89a10;
+/*background: rgba(255, 255, 255, 0.5); */
+}
+.contact {
+background-color: #d3697d;
+/*background: rgba(39, 200, 45, 0.5); */
+}
+
+.register {
+background-color: green;
+float: right;         /* nie działa */
+   
+}
+
+.cos {
+background-color: violet;
+}
+
+
+
+
+nav {
+overflow: hidden; /*ukrywa to co jest ponad naszą wielkość obiektu Samuraj */
+
+/* poniżej Midia */
+margin: 10px;
+height: 40px;      /*  powino być szerzej!!!, ale czerwone nie full */
+background-color: #4a494b;    /* orig #000   from Samuraj*/
+border-radius: 7px;    /* I added    #efe5d0*/ 
+border: 2px solid #efe5d0;   /* I added    #efe5d0*/ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+background-color: #e8e3ed;    /* orig #e5e4d7  */
+margin-left: 10px;
+margin-right: 280px;   /* 280 wyglada OK orig bylo 320 */
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 7px;
+padding: 20px;
+font-size: 110%;
+text-align: left;
+       /*border: 2px solid #7d4dd5;*/
+
+}
+
+.main p {
+text-align: left;
+}
+
+
+#poem p{      /* .main #poem p dlaczego to nie działa */
+text-align: center;
+font-size: 120%;
+
+}
+     /* .main #normal {
+      text-align: left;
+      }  */
+ 
+.sideright {
+background-color: #e8e3ed;  /* orig #e5e4d7*/
+font-size: 105%;
+padding: 20px;
+width:260px;    /* 300 wyglada OK, a oryg bylo 260 - ogolnie suggestion try to increase main instead of sidebar */
+float: right;
+border-radius: 7px;
+/*margin-left:10px; margin-right:10px; margin-top:0px; margin-bottom:10px;*/
+   margin: 0px 10px 10px 10px;  /* top zrobilam na 10 */
+clear:right;
+border: red 10px;   /*   ?? */
+}
+ 
+ 
+.imagesidebar {
+width: 260px;      /* orig 300, 260px; - try to increase main instead of sidebar */ 
+float: right;
+clear:right;
+border-radius: 7px;
+/*margin-left:10px; margin-right:10px; margin-top:0px; margin-bottom:10px;*/
+    margin: 0px 10px 10px 10px;
+opacity: 1.0;
+transition: opacity 1s ease-in-out;
+}
+ 
+.imagesidebar:hover {
+opacity: 0.4;
+}
+
+          #noOpacity:hover{
+         opacity: 1.0;   /*opacity: none;*/
+          font-size: 300%;
+            }
+
+			
+			.btn {
+				
+                margin: 20px 1px 0px 0px; 
+               padding: 10px 15px;
+
+/*font-size: 180%;  rusza tylko ikonę zamiast btn  btn-lg */
+			}
+
+
+#footer {
+background-color:  #7d4dd5;  /* orig #5c755e */
+margin: 10px;
+height: 90px;    /* wg autor 60px */
+border-radius: 7px;
+clear: both;   /* wchodzenie elementow sidebar na footer zapobiega both = right, left */
+color: white;    /*#efe5d0   */
+text-align: center;
+line-height: 90px;
+/*padding: 15px;     wczesniej wiecej linii*/  
+font-size: 140%;
+border: 2px solid #efe5d0;    /* I added */
+
+	
+
+}
+
+
+#footer ul {  /* created black bar */
+padding: 5px;
+list-style-type: none;
+text-align: center;
+margin: 10px;
+border-radius: 7px;
+} 
+ 
+ 
+#footer ul li {  /* created li element to display side by side */
+display: inline;
+}
+
+
+#footer ul li a {  
+text-decoration: none;    /* bez podkreslenia */
+font-family: Arial;
+padding: .2em 1em;            /*  */
+color: #efe5d0;
+background-color: #7d4dd5;   /* orig #5c755e */
+}
+
+
+#footer ul li a:hover {  
+color: #000;
+background-color: #fff;
+}
+
+/* ============= HEADING SECTIN ============= */
+h1 {
+font-size: 180%;   /*  orig  120%  */
+color: #db143c;     /*  orig  #ce282e  */
+
+
+/* dodane od Samuraj podkreślenie */
+text-align: center;
+margin: 0 20% 20px 20%;  /* 10% ostatni parametr - dluzsza linia */
+padding-bottom: 15px;
+border-bottom: 2px solid black;
+
+
+}
+ 
+h2 {
+font-size: 140%;   
+color: #3814d7;       /*#6504af;      orig  darkblue  */
+text-align: center;
+
+}
+
+h3 {    /* h3 inherited from header - was margin 10 px so increased - soluction margin override to 0 here*/
+font-size: 250%;
+text-align: center;   /* horisontaly centered */
+color: #e5e4df;
+font-family: "Century Gotic", "Gill Sans", "Arial", "sans-serif";
+margin: 0;
+position: relative;   /* vertically aligned */
+top: 50%;
+-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+
+
+/* =============== TOGGLE BUTTON WITH NAVIGATION BARS =============== */
+
+* {          /*  ok   */   
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+}
+
+body {      /*  ok   */
+ /*background-color: #f3f3f3; ;         /*#f3f3f3;   ok    tlo od Danazar*/
+}
+
+
+nav {
+width: 240px;
+background-color: #fff;
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;    /* orig left */
+z-index: 1000;
+transition: all ease-in-out: 200ms;
+-webkid-transition: all ease-in-out: 200ms;  
+
+}
+
+nav img {
+display: block;       /* block = center */
+width: 65%;
+margin: 0 auto;
+padding-top: 30px;
+border-radius: 20px;   
+
+}
+
+nav ul {
+padding-left: 30px;
+padding-top: 60px;
+}
+
+nav ul li {
+list-style: none;
+padding: 4px 0px;
+}
+
+nav ul li a {
+font-family: Arial;
+font-weight: 300;
+colof: #272727;
+text-transform: uppercase;
+}
+
+#toggleMenu {
+   width: 20px;
+   height: 20px;
+   background-color: #fff;
+   background-image: url(close.png);  /* czy '' 
+      <nav><i class="fa fa-bars" aria-hidden="true"></i> </nav>     */
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   z-index: 1050;
+   cursor: pointer;
+   border: 10px solid #fff;
+   border-radius: 2px;
+   transition: all ease-in-out: 200ms;
+   -webkid-transition: all ease-in-out: 200ms; 
+}
+
+#toggleMenu:hover {
+  opacity: 0.7;
+}
+
+/* ============= image banner ===============  */
+
+.main-banner {   /*  ok   */
+   margin: 0 auto;      /*  center  */
+   width: 1200px;   /* orig 1200  is a white strip between pictures*/
+   height: 400px;
+   background-color: #fff;   
+   overflow: hidden;
+   position: relative;
+   
+}
+
+.main-banner .imgban {     /*  ok   */
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0px;
+   transition: all ease-in-out 500ms;
+   -webkid-transition: all ease-in-out: 500ms; 
+   -moz-transition: all ease-in-out: 500ms; 
+   -o-transition: all ease-in-out: 500ms; 
+}
+  
+
+.main-banner #imgban3 {    /*  ok   */
+   background-image: url(imgban3.jpg);
+   background-size: cover;
+   bacground-position: center;
+   background-repeat: no-repeat;
+}
+ 
+.main-banner #imgban2 {     /*  ok   */
+   background-image: url(imgban2_2.jpg);
+   background-size: cover;
+   bacground-position: center;
+   background-repeat: no-repeat;  
+}
+.main-banner #imgban1 {    /*  ok   */
+   background-image: url(imgban1.jpg);
+   background-size: cover;
+   bacground-position: center;
+   background-repeat: no-repeat;
+}
+
+.imgbanbtn {     /*  ok   */
+   width: 40px;
+   height: 40px;
+   background-color: #000;
+   border-radius: 4px;
+   position: absolute;
+   top: 180px;
+   z-index: 2000;
+   opacity: 0.8;
+   cursor: pointer;
+
+}
+
+.imgbanbtn:hover {    /*  ok   */
+   opacity: 0.9;
+}
+
+.imgbanbtn-prev {    /*  ok   */
+   left: 5px;
+   background-image: url(arrow_left.png);
+   background-size: 60%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.imgbanbtn-next {    /*  ok   */
+   right: 5px;
+   background-image: url(arrow_right.png);
+   background-size: 60%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.main-banner .imgban-box h2 {    /*  ok   */
+   font-family: arial;
+   font-size: 40px;      /* orig 60px  */
+   color: #fff;
+}
+
+.main-banner .imgban-box p {   /*       ok   */
+   padding-top: 6px;
+   font-family: arial;
+   font-size: 24px;     /* bylo 16*/
+   color: #fff;
+}
+
+.main-banner #imgban3 .imgban-box {    /*  ok   */
+   padding-top: 220px;
+   padding-left: 100px;
+}
+
+.main-banner #imgban2 .imgban-box {   /*  ok   */
+   padding-top: 220px;
+   padding-right: 100px;
+   float: right;
+   text-align: right;
+}
+
+.main-banner #imgban1 .imgban-box {   /*  ok   */
+   padding-top: 70px;
+   padding-left: 100px;
+}
+
+
+
+/* ============= Contact Form ===============  */
+
+form {
+                      /*rgba(255, 255, 255, 0.6);*/
+background: dimgrey;
+padding: 20px;
+}
+
+form div.row {     /* dla każdego wiersza w formularzu */
+width: 50%;     /* 50% kontenera */
+margin: auto;       /* wyśrodkowanie za pomocą margin auto */
+margin-bottom: 20px;
+}
+
+form label {
+width: 40%;    /* 30% wysokosci rodzica ...   */
+text-align: end;   /* tekst ma się wyrównywać do prawej krawędzi */
+display: block;
+float: left;   /* aby etykieta z polem tekstowym w jednej linii */
+margin-right: 20px;  /* aby etykieta nie konczyla sie rowno z początkiem n/pola tekstowego */
+       color: white;
+
+} 
+
+form input, form select, form textarea {
+padding: 5px;
+border-radius: 5px;
+width: 250px;  
+}
+
+form input [type="checkbox"]{   /* dla każdego imputa o atrybucie type=  */
+position: relative;   /* ustawienie elementu względem jego początkowej pozycji */
+left: 30%;  /* odsuwa ten element o 30% od krawędzi szerokości rodzica od lewej strony   input przesunięty w prawo od jego początkowej pozycji*/
+width: auto;
+}
+
+form span {     /* dot. akceptuję regulamin */
+position: relative;
+left: 30%;   
+}
+
+form input[type="submit"]{
+width: 150px;
+background: rgba(0,0,0,0.5); 
+border: none;
+color: #fff;
+cursor: pointer;
+
+}
+
+form div.row:last-of-type {
+text-align: center;          /*   text-align: center;    button send center*/
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+.sideright-image a hover {
+ 
+    opacity: 1.0;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
